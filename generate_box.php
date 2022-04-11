@@ -61,7 +61,7 @@ for($i = 0; $i < $rectangles_count; $i++) {
     $y2 = rand($y1 + $min_size, $y1 + $max_lowest);
 }
 
-imagejpeg($canvas, 'box.jpg');
+imagejpeg($canvas, 'result.jpg');
 
 function isOverSized(int $image_size, int $min_rectangle_size, int $num_of_rectangles): bool {
     $min_possible_area = $num_of_rectangles * ($min_rectangle_size * $min_rectangle_size);
